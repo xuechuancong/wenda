@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<p>
+    ppp
+</p>
+
+<pre>
+    ${value1}
+
+
+    <#list colors as color>
+        colors: ${color}<#sep>, </#sep>
+    </#list>
+
+</pre>
+
+<pre>
+    Hello, !<#if userName == "admin">
+       ${userName}, pppp
+    </#if>
+</pre>
+
+<pre>
+    <#if userName == "admin">
+        Hello, ${userName}!
+    <#else>
+        Hello, World!
+    </#if>
+</pre>
+
+
+
+<p>
+    <#list colors as color>
+        colors: ${color}<#sep>, </#sep>
+    </#list>
+</p>
+
+<pre>
+    <#list map?keys as k>
+        <li>${k}
+    </#list>
+
+    <#list map?values as v>
+        <li>${v}
+    </#list>
+
+    <#list map as key, value>
+        <p>${key} : ${value}
+    </#list>
+
+
+</pre>
+
+
+<pre>
+    <p>User: ${user.name}
+    <p>${user.getDescription}</p>
+
+</pre>
+
+</body>
+</html>
